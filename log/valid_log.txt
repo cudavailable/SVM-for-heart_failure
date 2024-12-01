@@ -1,0 +1,12 @@
+Valid info
+-----------------
+kernel_type: linear
+C: 3.0
+epsilon: 1e-06
+
+Validation completed.
+
+Accuracy: 0.5552
+Precision: 0.5755
+Recall: 0.8333
+F1-Score: 0.6809

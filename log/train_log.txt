@@ -2,15 +2,15 @@ Train info
 -----------------
 max_iter: 10000
 kernel_type: linear
-C: 1.0
-epsilon: 0.001
+C: 3.0
+epsilon: 1e-06
 
 Training completed.
 
-Support vector count: 54
-bias: -21499.485
-w: [2.28125112e-05 7.24364084e-08 7.13705303e-05 5.82430199e-08
- 9.07035137e-06 1.55496366e-08 8.16369784e-02 4.57906356e-07
- 4.69569536e-05 3.49386034e-08 4.93396685e-08 2.24343214e-05]
-Converged after 1 iterations
+Support vector count: 170
+bias: -0.358
+w: [ 16.82421743   0.29553438   1.72490901   2.12418887 -16.66563577
+  -0.10670778   1.31530551  14.41699423 -10.23873637  -2.91513435
+   0.5329294  -34.01350244]
+Converged after 86 iterations
 SVM model saved to ./svm_model.joblib

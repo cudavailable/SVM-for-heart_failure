@@ -1,5 +1,6 @@
 import csv
 import numpy as np
+from sklearn.preprocessing import StandardScaler
 
 def readData(filename, hd=True):
     data, header = [], None
@@ -17,4 +18,10 @@ def getData(data_path):
     data = (data[1:]).astype(float)
     X, Y = data[:, 0:-1], data[:, -1].astype(int)
 
+    # 对训练数据标准化
+    scaler = StandardScaler()
+    X = scaler.fit_transform(X)
+    for i in range(len(Y)):
+        if(Y[i] == 0):
+            Y[i] = -1
     return X, Y

@@ -1,13 +1,12 @@
-import os
 import numpy as np
 import random as rnd
-filepath = os.path.dirname(os.path.abspath(__file__))
 
 class SVM():
     def __init__(self, max_iter=10000, kernel_type='linear', C=1.0, epsilon=0.001):
         self.kernels = {
             'linear' : self.kernel_linear,
-            'quadratic' : self.kernel_quadratic
+            'quadratic' : self.kernel_quadratic,
+            'rbf': self.kernel_rbf,
         }
         self.max_iter = max_iter
         self.kernel_type = kernel_type
@@ -101,3 +100,6 @@ class SVM():
 
     def kernel_quadratic(self, x1, x2):
         return (np.dot(x1, x2.T) ** 2)
+
+    def kernel_rbf(self, x1, x2, gamma=0.5):
+        return np.exp(-gamma * np.linalg.norm(x1 - x2) ** 2)
