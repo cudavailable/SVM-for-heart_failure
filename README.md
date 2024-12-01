@@ -22,4 +22,4 @@
 ## 参考文献
 1. Heart Failure Clinical Records [Dataset]. (2020). UCI Machine Learning Repository. https://doi.org/10.24432/C5Z89R.  
 2. https://github.com/LasseRegin/SVM-w-SMO  
-数据来源：http://archive.ics.uci.edu/dataset/519/heart+failure+clinical+records  
+3. 数据来源(http://archive.ics.uci.edu/dataset/519/heart+failure+clinical+records)  
