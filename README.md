@@ -16,5 +16,10 @@
 ## 使用说明
 1. 克隆本项目代码到本地；
 2. 先运行main函数中的valid函数，且不运行train函数，通过10折交叉验证确定较好的模型超参数（主要为前述模型配置中所提到的超参）；
-3. 注释valid函数，运行train函数在全数据集上进行训练（已有保存模型）
-4. 可根据已保存模型进行预测。这部分只写了加载模型函数，预测函数可自行构建。预测的输入数据需要和原始数据集格式一致。  
+3. 注释valid函数，运行train函数在全数据集上进行训练（已有保存模型）；  
+4. 可根据已保存模型进行预测。这部分只写了加载模型函数，预测函数可自行构建。注意预测的输入数据需要和原始数据集格式一致。  
+
+## 参考文献
+1. Heart Failure Clinical Records [Dataset]. (2020). UCI Machine Learning Repository. https://doi.org/10.24432/C5Z89R.  
+2. https://github.com/LasseRegin/SVM-w-SMO  
+数据来源：http://archive.ics.uci.edu/dataset/519/heart+failure+clinical+records  
